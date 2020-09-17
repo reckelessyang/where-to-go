@@ -1,32 +1,27 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <HomeHeader></HomeHeader>
+    <HomeIcons></HomeIcons>
+    <HomeHoliday></HomeHoliday>
   </div>
 </template>
+<script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+import HomeHeader from './components/page/Header'
+import HomeIcons from './components/page/Icons'
+import HomeHoliday from './components/holiday/Holiday'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  data () {
+    return {
+    };
+  },
+  components: {
+    HomeHeader,
+    HomeIcons,
+    HomeHoliday
   }
 }
+</script>
+<style lang="scss" scoped>
 </style>
