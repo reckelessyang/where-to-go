@@ -11,13 +11,9 @@
             </div>
             <div class="dujia_bottom">
                 <p class="content">{{items.content}}</p>
+                <p>{{items.detail}}</p>
                 <p class="price">￥{{items.price}}</p>
             </div>
-        </div>
-        <div class="more">
-            <a href="javascript:;">
-                更多特惠度假>
-            </a>
         </div>
     </div>
 
@@ -34,7 +30,8 @@ export default {
                 title:'中山-惠州',
                 yellow:'2天跟团游',
                 content:'含全程大巴+1晚住宿',
-                price:538
+                price:538,
+                detail:''
             },
             {
                 src:'//imgs.qunarzz.com/p/p14/201302/28/218ac6605f1d637f93835fbb.jpg_256x160_bfee6c2d.jpg',
@@ -42,7 +39,8 @@ export default {
                 title:'中山-桂林',
                 yellow:'4天自由行',
                 content:'含往返火车票+3晚住宿',
-                price:740
+                price:740,
+                detail:''
             },
             {
                 src:'//imgs.qunarzz.com/p/p66/201304/17/384810d022dd28f793835fbb.jpg_256x160_6a7ec251.jpg',
@@ -50,7 +48,8 @@ export default {
                 title:'中山-三亚',
                 yellow:'4天跟团游',
                 content:'含往返飞机票+3晚住宿',
-                price:740
+                price:740,
+                detail:''
             },
                         {
                 src:'//imgs.qunarzz.com/p/p70/1809/e7/4941057a6aae702.jpg_256x160_9fee6ccb.jpg',
@@ -58,10 +57,11 @@ export default {
                 title:'中山-丽江',
                 yellow:'10天跟团游',
                 content:'含往返飞机票(含税)+9晚住宿',
-                price:740
+                price:740,
+                detail:''
             },
             
-        ]
+        ],
     };
   }
 }
@@ -108,18 +108,6 @@ export default {
                 color:orange
             }
         }
-    }
-}
-.more{
-    margin: 20px;
-    border: 1px solid skyblue;
-    border-radius: 5px;
-    text-align: center;
-     padding: 5px;
-    a{
-        color:skyblue;
-        font-size: .1rem;
-        font-weight: 700;
     }
 }
 </style>
